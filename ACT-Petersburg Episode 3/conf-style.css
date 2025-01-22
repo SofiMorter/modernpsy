@@ -1,0 +1,1539 @@
+
+    * {
+  box-sizing: border-box;
+  margin: 0; /* Убираем стандартные отступы браузера */
+  padding: 0; /* Убираем стандартные отступы браузера */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Избегаем горизонтальной прокрутки */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f4ff;
+  font-family: Mulish;
+}
+
+/* Общий стиль для страницы */
+body {
+  margin: 0;
+  font-family: Mulish, sans-serif;
+  overflow-x: hidden; /* Избегаем горизонтальной прокрутки */
+  position: relative;
+}
+
+#allrecords a {
+    color: #342F3E;
+    text-decoration: none;
+}
+
+.showonmobile {
+    display: none;
+}
+
+.t-popup {
+    backdrop-filter: blur(2px);
+}
+
+.t-title {
+    font-family: 'Mulish', Arial, sans-serif;
+}
+
+.t-descr {
+    font-family: 'Mulish', Arial, sans-serif;
+}
+
+.t-submit {
+    font-family: 'Mulish', Arial, sans-serif;
+}
+
+.t-text {
+    font-family: 'Mulish', Arial, sans-serif;
+}
+
+.header-mobile {
+  display: none;
+}
+
+button {
+  font-family: Mulish;
+}
+
+
+#allrecords a, #allrecords button, #allrecords .t-radio, #allrecords .t-checkbox, #allrecords .t-img-select {
+    outline: none;
+    cursor: pointer;
+}
+
+.header-desktop {
+  display: flex;
+  max-width: 1280px;
+  padding: 24px 64px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  border-radius: 32px;
+  background: #fff;
+  margin: 16px auto;
+}
+
+.menu-desktop ul li {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.menu-desktop ul li a {
+  text-decoration: none;
+  color: #342f3e;
+  transition: color 0.2s ease-in;
+}
+
+#allrecords a:hover {
+  color: #7437f8;
+}
+
+.menu-desktop ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  word-break: keep-all;
+  line-break: strict;
+}
+
+a.btn-100 {
+  display: flex;
+  width: 100%;
+}
+
+.btn-primary {
+  display: flex;
+  padding: 16px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 16px;
+  background: #7437f8;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: 0.33px;
+  border-width: 0px;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+}
+
+.btn-primary:hover {
+  background: #4500b5;
+}
+
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  height: 556px;
+  padding: 64px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+img.sobor {
+  position: absolute;
+  position: absolute;
+  left: 0px;
+  bottom: -150px;
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  padding: 4px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #f8f4ff;
+  color: #7437f8;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: 0.27px;
+}
+
+.hero h1 {
+  color: #342f3e;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 100px */
+  letter-spacing: 1.5px;
+  align-self: stretch;
+  margin: 0px;
+}
+
+.hero p {
+  color: #342f3e;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: 0.33px;
+  margin: 0px;
+  padding: 0px;
+  max-width: 608px;
+}
+
+.factoid {
+  max-width: 1280px;
+  margin: 8px auto 0px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.date-place {
+  display: flex;
+  width: 425px;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+}
+
+.date .place {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+h3 {
+  color: #7437f8;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.27px;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: #342f3e;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 28.6px */
+  letter-spacing: 0.33px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.features {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 32px;
+  background: #7437f8;
+}
+
+.features p {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.27px;
+}
+
+.previous {
+  display: flex;
+  padding: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+  max-width: 1280px;
+  margin: 64px auto 0px;
+  border-radius: 32px;
+  background: var(--white, #fff);
+}
+
+h2 {
+  color: #342f3e;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 48px */
+  letter-spacing: 0.72px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.headers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+p.p2 {
+  color: #342f3e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.27px;
+}
+
+.confs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  width: 100%;
+}
+
+.confs-descr {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  justify-content: space-between;
+}
+
+.btn-secondary {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f8f4ff;
+  color: #7437f8;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.27px;
+  border-width: 0px;
+}
+
+.confs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+
+.confs-img {
+  height: 200px;
+  align-self: stretch;
+  border-radius: 8px;
+}
+
+.invite-speakers {
+  display: flex;
+  padding: 64px;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+  max-width: 1280px;
+  margin: 64px auto 0px;
+}
+.descr-wrapper {
+  display: flex;
+  width: 544px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.p-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.belova-img {
+  width: 544px;
+  align-self: stretch;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.partners {
+  display: flex;
+  padding: 64px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+  max-width: 1280px;
+  margin: 64px auto 0px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.akpn {
+  display: flex;
+  width: 242px;
+  height: 80px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.logo-frame,
+.alvi {
+  display: flex;
+  padding: 8px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #f8f4ff;
+}
+
+.text-center {
+  text-align: center;
+  width: 100%;
+}
+
+.invite-partners {
+  display: flex;
+  padding: 64px;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+  max-width: 1280px;
+  margin: 64px auto 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.invite-partners .descr-wrapper {
+  display: flex;
+  width: 584px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.lions {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.invite-audience {
+  display: flex;
+  height: 361px;
+  padding: 64px;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: #7437f8;
+  max-width: 1280px;
+  margin: 64px auto 0px;
+  position: relative;
+}
+
+.invite-audience .headers {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.invite-audience .headers .h3,
+.invite-audience .headers .h2 {
+  color: #ffffff;
+}
+
+.audience-img {
+  position: absolute;
+  width: 90%;
+  bottom: 0px;
+}
+
+.price {
+  display: flex;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+  max-width: 1280px;
+  margin: 64px auto 0px;
+}
+
+.tickets-wrapper {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.ticket {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: #f8f4ff;
+  justify-content: space-between;
+}
+
+.ticket-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.ticket-button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+  color: #342f3e;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'dlig' on;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+}
+
+p.p3 {
+  color: #342f3e;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.faq {
+  max-width: 1280px;
+  margin: 64px auto 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  align-self: stretch;
+}
+
+/* Общий стиль аккордеона */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Отступ между карточками */
+}
+
+/* Стиль каждого пункта аккордеона */
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 32px;
+  background: #fff;
+  overflow: hidden; /* Для скрытия содержимого */
+  transition: max-height 0.2s ease;
+}
+
+/* Скрытие контента по умолчанию */
+.accordion-item:not(.active) .accordion-content {
+  max-height: 0; /* Изначально контент скрыт */
+  overflow: hidden; /* Скрываем всё, что выходит за пределы */
+  opacity: 0; /* Начальное состояние невидимости */
+  transition: opacity 0.2s ease 0.1s, max-height 0.2s ease; /* Небольшая задержка */
+}
+
+/* Контент раскрытого пункта */
+.accordion-item.active .accordion-content {
+  opacity: 1; /* Появление текста */
+  /* max-height динамически задаётся через JavaScript */
+}
+
+/* Заголовок */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Заголовок занимает всю ширину */
+  cursor: pointer; /* Указатель мыши на всем заголовке */
+}
+
+.accordion-header h3 {
+  color: #342f3e;
+  font-variant-numeric: stacked-fractions ordinal;
+  font-feature-settings: 'dlig' on;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 35.2px */
+}
+
+/* Описание */
+.accordion-content p {
+  color: #342f3e;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.27px;
+}
+
+/* Кнопка переключения */
+.accordion-toggle {
+  display: flex;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-toggle .line {
+  position: absolute;
+  background: #342f3e;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.accordion-toggle .line.horizontal {
+  width: 24px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.accordion-toggle .line.vertical {
+  width: 2px;
+  height: 24px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Анимация изменения иконки */
+.accordion-item.active .accordion-toggle .line.vertical {
+  height: 0;
+}
+
+.meet-spb {
+  max-width: 1280px;
+  margin: 64px auto;
+  display: flex;
+  height: 271px;
+  padding: 64px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 32px;
+  background: #7437f8;
+  position: relative;
+  overflow: hidden;
+}
+.dvor-img {
+  position: absolute;
+  top: 0px;
+}
+
+.social-media {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  z-index: 50;
+}
+
+@media (max-width: 800px) {
+  .header-mobile {
+    display: flex;
+  }
+  .header-desktop {
+    display: none;
+  }
+  /* Хедер */
+     .header {
+       
+        display: flex;
+        padding: 16px 8px;
+        flex-direction: row;
+        width: calc(100% - 32px);
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 16px;
+        background: #fff;
+        z-index: 50;
+        margin: 0 16px;
+    }
+
+  /* Кнопка "Купить билет" */
+  .ticket-btn {
+    display: flex;
+    padding: 16px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #7437f8;
+    border-width: 0px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: var(--white, #fff);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: 0.21px;
+  }
+  .ticket-btn:hover {
+    background: #4500b5;
+  }
+
+ /* Бургер */
+.burger {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Линии бургера */
+  .burger .line {
+    position: absolute; /* Для точного позиционирования */
+    width: 30px;
+    height: 2px;
+    background: #342f3e;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center; /* Вращение относительно центра */
+  }
+  
+  /* Позиции линий в состоянии "бургер" */
+  .burger .line:nth-child(1) {
+    top: 10px; /* Верхняя линия */
+  }
+  
+  .burger .line:nth-child(2) {
+    top: 19px; /* Средняя линия (центр) */
+  }
+  
+  .burger .line:nth-child(3) {
+    top: 28px; /* Нижняя линия */
+  }
+  
+  /* Анимация бургер-кнопки */
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg); /* Верхняя линия вращается */
+    top: 19px; /* Перемещается в центр */
+  }
+  
+  .burger.active .line:nth-child(2) {
+    opacity: 0; /* Средняя линия исчезает */
+  }
+  
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg); /* Нижняя линия вращается */
+    top: 19px; /* Перемещается в центр */
+  }
+  
+
+  /* Затемнение */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(116, 55, 248, 0.3);
+    backdrop-filter: blur(2px);
+    display: none;
+    z-index: 30;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Меню */
+  .menu {
+    position: fixed;
+    top: 76px; /* 60px высота хедера + 16px отступ */
+    left: 0;
+    width: calc(100% - 32px); /* Учитываем margin */
+    background: white;
+    padding: 16px;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease;
+    z-index: 49;
+    margin: 16px;
+    border-radius: 16px;
+  }
+
+  .menu.active {
+    transform: translateY(0);
+  }
+
+  /* Список в меню */
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu ul li {
+    margin: 16px 0;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .btn-primary {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #7437f8;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 28.6px */
+    letter-spacing: 0.33px;
+    border-width: 0px;
+    cursor: pointer;
+    transition: background 0.2s ease-in;
+  }
+
+  .btn-primary:hover {
+    background: #4500b5;
+  }
+
+.showonmobile {
+    display: block;
+}
+
+.showondesktop {
+    display: none;
+}
+
+  .hero {
+    max-width: 800px;
+    margin: 16px 16px 0px;
+    display: flex;
+    height: 350px;
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    position: relative;
+    overflow: hidden;
+  }
+
+  img.sobor {
+    position: absolute;
+    top: 85%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(
+      -50%,
+      -50%
+    ); /* This is a shorthand oftranslateX(-50%) and translateY(-50%) */
+    width: 130%;
+  }
+
+  .label {
+    display: flex;
+    padding: 4px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #f8f4ff;
+    color: #7437f8;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+    letter-spacing: 0.27px;
+  }
+
+  .hero h1 {
+    color: #342f3e;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 38px */
+    letter-spacing: 0.57px;
+  }
+
+  .hero p {
+    color: #342f3e;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: 0.24px;
+  }
+
+  .factoid {
+    max-width: 800px;
+    margin: 8px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  .date-place {
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px;
+    width: 100%;
+    background: var(--white, #fff);
+  }
+
+  .date .place {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  h3 {
+    color: #7437f8;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.27px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  p {
+    color: #342f3e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 28.6px */
+    letter-spacing: 0.33px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .features {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: #7437f8;
+  }
+
+  .features p {
+    color: #fff;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.27px;
+  }
+
+  .previous {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: var(--white, #fff);
+    margin: 24px 16px 0px;
+  }
+
+  h2 {
+    color: #342f3e;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 24px */
+    letter-spacing: 0.36px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .headers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+  p.p2 {
+    color: #342f3e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.27px;
+  }
+
+  .confs-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+    width: 100%;
+  }
+
+  .confs-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  .btn-secondary {
+    display: flex;
+    padding: 8px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #f8f4ff;
+    color: #7437f8;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.27px;
+    border-width: 0px;
+  }
+
+  .confs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+  }
+
+  .confs-img {
+    height: 100px;
+    align-self: stretch;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .invite-speakers {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: var(--white, #fff);
+    max-width: 1280px;
+    margin: 24px 16px 0px;
+  }
+  .descr-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .p-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  .belova-img {
+    width: 100%;
+    align-self: stretch;
+    height: 275px;
+    align-self: stretch;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .partners {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: var(--white, #fff);
+    max-width: 1280px;
+    margin: 24px 16px 0px;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .akpn {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .logo-frame,
+  .alvi {
+    display: flex;
+    width: 100%;
+    padding: 8px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #f8f4ff;
+  }
+  .w100px {
+    width: 100px;
+  }
+
+  .text-center {
+    text-align: center;
+    width: 100%;
+  }
+
+  .invite-partners {
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 64px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: var(--white, #fff);
+    max-width: 1280px;
+    margin: 24px 16px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .invite-partners .descr-wrapper {
+    display: flex;
+    width: 584px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .lions {
+    display: none;
+  }
+
+  .invite-audience {
+    display: flex;
+    height: 200px;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 64px;
+    align-self: stretch;
+    border-radius: 32px;
+    background: #7437f8;
+    max-width: 1280px;
+    margin: 24px 16px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .invite-audience .headers {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  .invite-audience .headers .h3,
+  .invite-audience .headers .h2 {
+    color: #ffffff;
+  }
+
+  .audience-img {
+    position: absolute;
+    width: 130%;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(
+      -50%
+    ); /* This is a shorthand oftranslateX(-50%) and translateY(-50%) */
+    top: 80%;
+  }
+
+  .price {
+    display: flex;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 32px;
+    background: var(--white, #fff);
+    max-width: 1280px;
+    margin: 24px 16px 0px;
+  }
+
+  .tickets-wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    align-self: stretch;
+    flex-direction: column;
+  }
+
+  .ticket {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: #f8f4ff;
+    justify-content: space-between;
+  }
+
+  .ticket-headers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  .ticket-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+  h4 {
+    margin: 0px;
+    padding: 0px;
+    color: #342f3e;
+    font-variant-numeric: ordinal;
+    font-feature-settings: 'dlig' on;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 38.4px */
+  }
+
+  p.p3 {
+    color: #342f3e;
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+  }
+
+  .faq {
+    max-width: 1280px;
+    margin: 24px auto 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    padding: 0px 16px;
+  }
+
+  /* Общий стиль аккордеона */
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Отступ между карточками */
+  }
+
+  /* Стиль каждого пункта аккордеона */
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 8px 24px;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 32px;
+    background: #fff;
+    overflow: hidden; /* Для скрытия содержимого */
+    transition: max-height 0.2s ease;
+  }
+
+  /* Скрытие контента по умолчанию */
+  .accordion-item:not(.active) .accordion-content {
+    max-height: 0; /* Изначально контент скрыт */
+    overflow: hidden; /* Скрываем всё, что выходит за пределы */
+    opacity: 0; /* Начальное состояние невидимости */
+    transition: opacity 0.2s ease 0.1s, max-height 0.2s ease; /* Небольшая задержка */
+  }
+
+  /* Контент раскрытого пункта */
+  .accordion-item.active .accordion-content {
+    opacity: 1; /* Появление текста */
+    /* max-height динамически задаётся через JavaScript */
+  }
+
+  /* Заголовок */
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Заголовок занимает всю ширину */
+    cursor: pointer; /* Указатель мыши на всем заголовке */
+  }
+
+  .accordion-header h3 {
+    color: #342f3e;
+    font-variant-numeric: stacked-fractions ordinal;
+    font-feature-settings: 'dlig' on;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 35.2px */
+  }
+
+  /* Описание */
+  .accordion-content p {
+    color: #342f3e;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.27px;
+    margin-bottom: 16px;
+  }
+
+  /* Кнопка переключения */
+  .accordion-toggle {
+    display: flex;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .accordion-toggle .line {
+    position: absolute;
+    background: #342f3e;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-toggle .line.horizontal {
+    width: 10px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  .accordion-toggle .line.vertical {
+    width: 4px;
+    height: 24px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  /* Анимация изменения иконки */
+  .accordion-item.active .accordion-toggle .line.vertical {
+    height: 0;
+  }
+
+  .meet-spb {
+    max-width: 1280px;
+    margin: 24px 16px;
+    display: flex;
+    height: 271px;
+    height: auto;
+    padding: 24px;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 32px;
+    background: #7437f8;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dvor-img {
+    display: none;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+    
+    
+    
+    
+    
+    
