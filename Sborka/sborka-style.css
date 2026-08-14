@@ -1312,15 +1312,32 @@ em {
   scale: 1.03;
 }
 
-/* Заглушка, если картинка не загрузилась */
+/* Заглушка, если картинка не загрузилась или ещё не подставлена:
+   схематичная страница вместо битой иконки */
 .work__shot.is-empty img {
   display: none;
 }
 
 .work__shot.is-empty {
-  background:
-    repeating-linear-gradient(-45deg, transparent 0 12px, var(--line-soft) 12px 13px),
-    var(--paper-2);
+  background-color: var(--paper-2);
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(rgba(20, 18, 16, .72), rgba(20, 18, 16, .72)),
+    linear-gradient(var(--sand), var(--sand)),
+    linear-gradient(var(--flame), var(--flame)),
+    linear-gradient(var(--sand), var(--sand)),
+    linear-gradient(var(--sand), var(--sand)),
+    linear-gradient(var(--sand), var(--sand));
+  /* Проценты в background-position считаются от свободного места,
+     поэтому значения пересчитаны: P = L * 100 / (100 - размер) */
+  background-size: 62% 8%, 44% 5%, 20% 8%, 25% 20%, 25% 20%, 25% 20%;
+  background-position:
+    21% 33%,
+    14% 46%,
+    10% 60%,
+    11% 95%,
+    50% 95%,
+    89% 95%;
 }
 
 .work__cap {
