@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Рекламная разведка — отчёт по конкурентам за 24 часа</title>
+  <meta name="description"
+    content="Разведка по вашей нише за 24 часа: какие объявления откручивают конкуренты, куда ведут трафик и каких посадочных не хватает вам. 999 ₽, без созвонов.">
+  <!-- Подключение файла razvedka-style.css -->
+  <link rel="stylesheet" href="razvedka-style.css">
+  <!-- Если скрипты отключены — показываем блоки без анимации появления -->
+  <noscript>
+    <style>
+      .r {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+
+  <!-- ХЕДЕР. Меню и ссылок наружу нет: страница ведёт только к оплате -->
+  <header class="hdr" id="top">
+    <div class="hdr__in">
+      <span class="mark">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="7.5" stroke="currentColor" stroke-width="2.2" />
+          <path d="M16 16l5.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+          <circle cx="10.5" cy="10.5" r="2.8" class="mark__accent" />
+        </svg>
+        Рекламная разведка
+      </span>
+      <span class="hdr__price">999 ₽ · отчёт завтра</span>
+      <a class="btn btn--sm" href="#checkout">Заказать</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ЭКРАН 1. ОФФЕР -->
+    <section class="hero">
+      <div class="hero__in">
+
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Отчёт по вашей нише</p>
+
+          <h1 class="hero__title">Узнайте, что крутят ваши конкуренты в&nbsp;рекламе — и&nbsp;почему у&nbsp;них заявки
+            <em>дешевле</em></h1>
+
+          <p class="hero__lead">Разведка по вашей нише за 24 часа: какие объявления откручивают конкуренты, на какие
+            страницы ведут трафик и каких посадочных не хватает вам.</p>
+
+          <div class="terms">
+            <span class="terms__price">999 ₽</span>
+            <span class="terms__item">отчёт завтра</span>
+            <span class="terms__item">без созвонов</span>
+          </div>
+
+          <a class="btn btn--lg btn--wide" href="#checkout">Заказать разведку</a>
+          <p class="hero__note">Заполните три поля — сайт, ниша, город. Остальное сделаем сами.</p>
+        </div>
+
+        <!-- Визуал: страница отчёта -->
+        <div class="doc" aria-hidden="true">
+          <div class="doc__frame">
+            <div class="doc__page">
+              <div class="doc__top">
+                <span>отчёт · ниша, город</span>
+                <span>стр. 3</span>
+              </div>
+              <div class="doc__body">
+                <p class="doc__lbl">объявления конкурентов</p>
+
+                <div class="ad">
+                  <span class="ad__tag">реклама · конкурент 1</span>
+                  <span class="bar bar--head"></span>
+                  <span class="bar bar--l"></span>
+                  <span class="bar bar--url"></span>
+                </div>
+                <div class="ad">
+                  <span class="ad__tag">реклама · конкурент 2</span>
+                  <span class="bar bar--head"></span>
+                  <span class="bar bar--m"></span>
+                  <span class="bar bar--url"></span>
+                </div>
+                <div class="ad">
+                  <span class="ad__tag">реклама · конкурент 3</span>
+                  <span class="bar bar--head"></span>
+                  <span class="bar bar--l"></span>
+                  <span class="bar bar--url"></span>
+                </div>
+
+                <div class="mini">
+                  <div class="mini__row"><span>у них есть — у вас нет</span><span>они</span><span>вы</span></div>
+                  <div class="mini__row"><span>страница под услугу</span><span class="yes">✓</span><span
+                      class="no">✕</span></div>
+                  <div class="mini__row"><span>оффер с ценой</span><span class="yes">✓</span><span class="no">✕</span>
+                  </div>
+                  <div class="mini__row"><span>страница под гео</span><span class="yes">✓</span><span
+                      class="no">✕</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="stamp">
+              <span class="stamp__n">24</span>
+              <span class="stamp__t">часа</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ЭКРАН 2. ЧТО ВНУТРИ ОТЧЁТА -->
+    <section class="sec" id="inside">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">01 — Что внутри</p>
+          <h2 class="sec__title r">Не советы. Данные</h2>
+        </div>
+
+        <ul class="inside">
+          <li class="r">
+            <b>5–7 ваших конкурентов, которые платят за рекламу прямо сейчас</b>
+            <p>Кто и по каким запросам откручивает.</p>
+          </li>
+          <li class="r">
+            <b>Их объявления</b>
+            <p>Скриншотами: заголовки, офферы, цены, акции.</p>
+          </li>
+          <li class="r">
+            <b>Их посадочные страницы</b>
+            <p>Куда они ведут трафик и как устроены эти страницы.</p>
+          </li>
+          <li class="r">
+            <b>Таблица «у них есть — у вас нет»</b>
+            <p>По услугам, офферам и страницам.</p>
+          </li>
+          <li class="r">
+            <b>Список посадочных, которых вам не хватает</b>
+            <p>С приоритетами: какая закроет самый дорогой запрос.</p>
+          </li>
+        </ul>
+
+        <p class="format r">Формат: PDF на <span class="fill">[8–12]</span> страниц. Никакой воды — только ваша ниша и
+          ваш город.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 3. ПРИМЕР.
+         Плейсхолдер: здесь схемы разворотов. Заменить на скриншоты образцового
+         отчёта (по вымышленной клинике) — загрузить в /assets на Тильде. -->
+    <section class="sec" id="example">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">02 — Пример</p>
+          <h2 class="sec__title r">Так выглядит разворот отчёта</h2>
+        </div>
+
+        <div class="spreads">
+          <article class="spread r">
+            <p class="spread__cap">разворот 1 · объявления конкурентов</p>
+            <div class="spread__body">
+              <div class="ad" style="animation:none;opacity:1">
+                <span class="ad__tag">реклама · конкурент 1</span>
+                <span class="bar bar--head"></span>
+                <span class="bar bar--l"></span>
+                <span class="bar bar--url"></span>
+              </div>
+              <div class="ad" style="animation:none;opacity:1">
+                <span class="ad__tag">реклама · конкурент 2</span>
+                <span class="bar bar--head"></span>
+                <span class="bar bar--m"></span>
+                <span class="bar bar--url"></span>
+              </div>
+              <div class="ad" style="animation:none;opacity:1">
+                <span class="ad__tag">реклама · конкурент 3</span>
+                <span class="bar bar--head"></span>
+                <span class="bar bar--l"></span>
+                <span class="bar bar--url"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="spread r">
+            <p class="spread__cap">разворот 2 · у них есть — у вас нет</p>
+            <div class="spread__body">
+              <div class="mini">
+                <div class="mini__row"><span>что сравниваем</span><span>они</span><span>вы</span></div>
+                <div class="mini__row"><span>страница под услугу</span><span class="yes">✓</span><span
+                    class="no">✕</span></div>
+                <div class="mini__row"><span>страница под гео</span><span class="yes">✓</span><span class="no">✕</span>
+                </div>
+                <div class="mini__row"><span>оффер с ценой</span><span class="yes">✓</span><span class="no">✕</span>
+                </div>
+                <div class="mini__row"><span>акция на первый визит</span><span class="yes">✓</span><span
+                    class="no">✕</span></div>
+                <div class="mini__row"><span>форма в первом экране</span><span class="yes">✓</span><span
+                    class="yes">✓</span></div>
+                <div class="mini__row"><span>цены на странице</span><span class="yes">✓</span><span class="no">✕</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="spread r">
+            <p class="spread__cap">разворот 3 · каких страниц не хватает</p>
+            <div class="spread__body">
+              <div class="rec"><span class="rec__n">01</span><span>страница под самый дорогой запрос</span><span
+                  class="rec__pri">высокий</span></div>
+              <div class="rec"><span class="rec__n">02</span><span>страница под второе направление</span><span
+                  class="rec__pri">высокий</span></div>
+              <div class="rec"><span class="rec__n">03</span><span>страница под город</span><span
+                  class="rec__pri rec__pri--low">средний</span></div>
+              <div class="rec"><span class="rec__n">04</span><span>страница под акцию</span><span
+                  class="rec__pri rec__pri--low">средний</span></div>
+              <div class="rec"><span class="rec__n">05</span><span>страница под сезонный спрос</span><span
+                  class="rec__pri rec__pri--low">низкий</span></div>
+            </div>
+          </article>
+        </div>
+
+        <p class="spreads__note r">Разделы обезличены: в вашем отчёте на этих местах будут названия ваших конкурентов,
+          их объявления и ваши услуги.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 4. ЗАЧЕМ ЭТО ВАМ -->
+    <section class="sec" id="why-you">
+      <div class="wrap gap">
+        <div>
+          <p class="sec__meta">03 — Зачем это вам</p>
+          <h2 class="sec__title r">Вы платите за клик столько же, сколько конкурент. Дальше начинается разница</h2>
+          <p class="r">Он ведёт трафик на отдельную страницу под каждую услугу — вы на общую. Его оффер отвечает на цену
+            — ваш нет. Итог: клик один и тот же, заявка в два раза дороже.</p>
+          <p class="gap__accent r">Разведка показывает, где именно вы теряете, — до того, как вы потратите следующий
+            рекламный бюджет.</p>
+        </div>
+
+        <div class="versus r">
+          <div class="vs">
+            <p class="vs__who">вы</p>
+            <div class="vs__row"><span>Цена клика</span><span class="vs__val">та же</span></div>
+            <div class="vs__row"><span>Куда ведёт трафик</span><span class="vs__val">общая страница</span></div>
+            <div class="vs__row"><span>Оффер про цену</span><span class="vs__val">нет</span></div>
+          </div>
+          <div class="vs vs--them">
+            <p class="vs__who">конкурент</p>
+            <div class="vs__row"><span>Цена клика</span><span class="vs__val">та же</span></div>
+            <div class="vs__row"><span>Куда ведёт трафик</span><span class="vs__val">страница под услугу</span></div>
+            <div class="vs__row"><span>Заявка выходит</span><span class="vs__val">вдвое дешевле</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 5. ДЛЯ КОГО -->
+    <section class="sec" id="fit">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">04 — Для кого</p>
+          <h2 class="sec__title r">Честно про обе стороны</h2>
+        </div>
+
+        <div class="fit">
+          <div class="fit__col fit__col--yes r">
+            <h3>Подойдёт, если</h3>
+            <ul>
+              <li>У вас уже крутится реклама в Яндексе или соцсетях — или запускаете в ближайший месяц</li>
+              <li>Вы знаете, сколько стоит ваша заявка, и хотите дешевле</li>
+              <li>Ниша: услуги, клиники, строительство, ремонт, локальный бизнес</li>
+            </ul>
+          </div>
+          <div class="fit__col fit__col--no r">
+            <h3>Не подойдёт, если</h3>
+            <ul>
+              <li>Рекламы нет и не планируется — отчёт будет вам просто любопытен, но бесполезен</li>
+              <li>Вы маркетплейс-селлер — там другая механика, наш отчёт не про это</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 6. ПОЧЕМУ 999 -->
+    <section class="sec" id="price">
+      <div class="wrap">
+        <div class="why r">
+          <p class="sec__meta">05 — Почему 999 ₽</p>
+          <h2 class="sec__title">Честный ответ: это знакомство</h2>
+          <p>Полный разбор с нашими рекомендациями стоит <span class="fill">[10–20 тыс.]</span> ₽. Разведка за 999 —
+            способ показать, как мы работаем, до того, как вы доверите нам что-то серьёзное.</p>
+          <p>Мы делаем посадочные страницы. Часть тех, кто закажет разведку, увидит в отчёте, каких страниц им не
+            хватает, — и закажет их у нас. На это и расчёт. Никакого подвоха, просто воронка — вы наверняка и сами так
+            делаете.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 7. КАК ЭТО РАБОТАЕТ -->
+    <section class="sec" id="how">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">06 — Как это работает</p>
+          <h2 class="sec__title r">Три шага и сутки</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step r">
+            <span class="step__n">1</span>
+            <h3>Заполняете три поля</h3>
+            <p>Сайт, ниша, город — и оплачиваете.</p>
+          </li>
+          <li class="step r">
+            <span class="step__n">2</span>
+            <h3>Мы собираем данные</h3>
+            <p>Сервисы аналитики рекламы плюс ручная проверка.</p>
+          </li>
+          <li class="step r">
+            <span class="step__n">3</span>
+            <h3>Через 24 часа отчёт у вас</h3>
+            <p>На почту и в телеграм.</p>
+          </li>
+        </ol>
+
+        <p class="promise r">Если по вашей нише соберётся меньше трёх рекламирующихся конкурентов — вернём деньги и
+          скажем об этом честно. Такое бывает в очень узких нишах.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 8. ВОПРОСЫ -->
+    <section class="sec" id="faq">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">07 — Вопросы</p>
+          <h2 class="sec__title r">Что обычно спрашивают</h2>
+        </div>
+
+        <div class="qas">
+          <details class="qa r">
+            <summary><span>Это автоматическая выгрузка из сервиса?</span><i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Данные — из сервисов, выводы — руками. Автовыгрузку вы можете сделать и сами, ценность в
+                интерпретации: что из этого значит «вы теряете деньги», а что просто шум.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary><span>У меня нет сайта, только соцсети</span><i class="qa__ico" aria-hidden="true"></i></summary>
+            <div class="qa__a">
+              <p>Подойдёт. Укажите ссылку на профиль — конкурентов и их рекламу мы найдём по нише и городу.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary><span>Что если конкуренты не крутят рекламу?</span><i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Значит, вы узнаете это за 999 ₽ — и это тоже результат: ниша свободна. Но если рекламирующихся меньше
+                трёх, вернём оплату.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary><span>Вы продаёте что-то дальше?</span><i class="qa__ico" aria-hidden="true"></i></summary>
+            <div class="qa__a">
+              <p>Да, посадочные страницы — и не скрываем этого. Отчёт при этом самоценен: он останется у вас независимо
+                от того, закажете ли вы что-то ещё.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 9. ФОРМА И ОПЛАТА -->
+    <section class="checkout" id="checkout">
+      <div class="wrap checkout__in">
+        <div>
+          <p class="sec__meta">08 — Заказ</p>
+          <h2 class="checkout__title">Заказать разведку — 999&nbsp;₽</h2>
+          <p class="checkout__lead">Три поля про бизнес и два для связи. Отчёт придёт через 24 часа после оплаты.</p>
+          <ul class="checkout__list">
+            <li>5–7 конкурентов с их объявлениями и посадочными</li>
+            <li>Таблица «у них есть — у вас нет»</li>
+            <li>Список недостающих страниц с приоритетами</li>
+            <li>Меньше трёх конкурентов в нише — вернём деньги</li>
+          </ul>
+        </div>
+
+        <form class="form" data-form novalidate>
+          <div class="field">
+            <label class="field__lbl" for="c-site">Сайт или профиль</label>
+            <input class="field__inp" id="c-site" name="site" type="text" inputmode="url" autocomplete="url"
+              placeholder="vashsite.ru или @profile" required>
+          </div>
+          <div class="field">
+            <label class="field__lbl" for="c-niche">Ниша</label>
+            <input class="field__inp" id="c-niche" name="niche" type="text" placeholder="что продаёте" required>
+          </div>
+          <div class="field">
+            <label class="field__lbl" for="c-city">Город</label>
+            <input class="field__inp" id="c-city" name="city" type="text" autocomplete="address-level2"
+              placeholder="где ищут ваши клиенты" required>
+          </div>
+          <div class="field">
+            <label class="field__lbl" for="c-contact">Телефон или телеграм</label>
+            <input class="field__inp" id="c-contact" name="contact" type="text" autocomplete="tel"
+              placeholder="+7 ··· или @nickname" required>
+          </div>
+          <div class="field">
+            <label class="field__lbl" for="c-mail">Почта</label>
+            <input class="field__inp" id="c-mail" name="email" type="email" inputmode="email" autocomplete="email"
+              placeholder="куда прислать отчёт" required>
+          </div>
+
+          <!-- Order bump: галочка до оплаты -->
+          <label class="bump" data-bump>
+            <input type="checkbox" name="bump" value="499">
+            <span>
+              <b>Добавить разбор вашей текущей посадочной — +499 ₽</b>
+              <span>Пройдём по вашей странице и отметим, что именно теряет заявки: оффер, структура, форма.</span>
+            </span>
+          </label>
+
+          <button class="btn btn--lg btn--pay" type="submit" data-pay>Оплатить 999 ₽</button>
+
+          <p class="legal">
+            Нажимая кнопку, вы соглашаетесь с <a href="#">офертой</a> и <a href="#">политикой обработки данных</a>.<br>
+            <span class="fill">[ИП Фамилия И. О., ИНН 000000000000, ОГРНИП 000000000000000]</span>
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr__in">
+      <p><span class="fill">[ИП Фамилия И. О.]</span> · <span class="fill">[ИНН]</span> · <span
+          class="fill">[почта]</span></p>
+      <p><a href="#">Оферта</a> · <a href="#">Политика обработки данных</a> · © <span data-year>2026</span></p>
+    </div>
+  </footer>
+
+  <!-- Липкая кнопка на телефоне: одно действие на всей странице -->
+  <div class="dock" data-dock>
+    <a class="btn btn--lg" href="#checkout">Заказать разведку — 999 ₽</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

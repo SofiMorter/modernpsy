@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Спасибо — отчёт готовим</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="razvedka-style.css">
+  <noscript>
+    <style>
+      .r {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+
+  <!-- Страница после оплаты. Разовый оффер: показывается один раз,
+       сразу после покупки разведки. Без таймеров. -->
+  <header class="hdr">
+    <div class="hdr__in">
+      <span class="mark">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="7.5" stroke="currentColor" stroke-width="2.2" />
+          <path d="M16 16l5.5 5.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+          <circle cx="10.5" cy="10.5" r="2.8" class="mark__accent" />
+        </svg>
+        Рекламная разведка
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="thanks">
+      <div class="wrap">
+        <div class="thanks__head">
+          <p class="sec__meta">Оплата прошла</p>
+          <h1 class="thanks__title">Отчёт будет у вас завтра</h1>
+        </div>
+        <p class="thanks__lead">Мы уже начали собирать данные по вашей нише. Отчёт придёт на почту и в телеграм в
+          течение 24 часов.</p>
+
+        <div class="oto">
+          <span class="oto__tag">только для заказавших разведку</span>
+          <h2>Первый экран под ваш самый дорогой запрос</h2>
+
+          <div class="oto__price">
+            <span class="oto__now">4 900 ₽</span>
+            <span class="oto__was">вместо <span class="fill">[7 900]</span> ₽</span>
+          </div>
+
+          <p>В отчёте вы увидите, каких посадочных вам не хватает. Первую — самую приоритетную — соберём сразу:
+            свёрстанный первый экран на живой странице, за 2 дня.</p>
+          <p>Цена ниже не из-за скидки и не потому, что предложение «сгорит». Данные по вашей нише уже собраны для
+            отчёта, поэтому вторая работа по тому же клиенту реально дешевле.</p>
+
+          <a class="btn btn--lg btn--wide" href="#order">Забрать первый экран за 4 900 ₽</a>
+          <p class="oto__fine">Оплата тем же способом. Если откажетесь — ничего не меняется, отчёт всё равно придёт
+            завтра.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr__in">
+      <p><span class="fill">[ИП Фамилия И. О.]</span> · <span class="fill">[почта]</span> · <span
+          class="fill">[@телеграм]</span></p>
+      <p>© <span data-year>2026</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
