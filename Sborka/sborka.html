@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сборка — посадочные страницы за два дня</title>
+  <meta name="description"
+    content="Собираем лендинги под каждую услугу, гео и кампанию за два дня. Бесплатно: разбор рекламы конкурентов и один готовый первый экран.">
+  <!-- Подключение файла sborka-style.css -->
+  <link rel="stylesheet" href="sborka-style.css">
+  <!-- Если скрипты отключены — показываем блоки без анимации появления -->
+  <noscript>
+    <style>
+      .r {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+
+  <!-- ХЕДЕР: логотип, короткое меню (прячется на мобильных), кнопка -->
+  <header class="hdr" id="top">
+    <div class="hdr__in">
+      <a class="logo" href="#top" aria-label="Сборка, наверх страницы">
+        <svg class="logo__mark" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="24" height="6" rx="2" fill="currentColor" />
+          <rect x="1" y="10" width="15" height="6" rx="2" fill="currentColor" opacity=".45" />
+          <rect x="1" y="19" width="20" height="6" rx="2" class="logo__accent" />
+        </svg>
+        <span class="logo__txt">Сборка</span>
+      </a>
+
+      <nav class="nav" aria-label="Разделы страницы">
+        <a href="#how">Как работаем</a>
+        <a href="#price">Цены</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#works">Работы</a>
+      </nav>
+
+      <a class="btn btn--sm hdr__cta" href="#final">Получить разбор</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ЭКРАН 1. ОФФЕР (вариант A — основной).
+         Варианты B и C лежат в script.js и включаются параметром ?v=b или ?v=c — см. README в этой папке. -->
+    <section class="hero" id="hero">
+      <div class="hero__in">
+
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Производство посадочных страниц</p>
+
+          <h1 class="hero__title" data-hero="title">Посадочные страницы <em>за&nbsp;два дня</em>, а&nbsp;не за месяц</h1>
+
+          <p class="hero__lead" data-hero="lead">Собираем лендинги под каждую услугу, гео и кампанию — в темпе, в
+            котором вы тестируете рекламу. Ставим на вашу площадку, править сможете сами.</p>
+
+          <!-- ФОРМА 1 из 2 -->
+          <form class="form form--hero" data-form novalidate>
+            <div class="field">
+              <label class="field__lbl" for="hero-site">Адрес вашего сайта</label>
+              <input class="field__inp" id="hero-site" name="site" type="text" inputmode="url" autocomplete="url"
+                placeholder="vashsite.ru" required>
+            </div>
+            <button class="btn btn--lg" type="submit" data-hero="cta">Получить бесплатный разбор и готовый экран</button>
+            <p class="form__note" data-hero="note">Пришлём анализ рекламы ваших конкурентов и один свёрстанный первый
+              экран. Без созвона и без обязательств.</p>
+          </form>
+        </div>
+
+        <!-- Визуал: страница собирается из блоков прямо на экране -->
+        <div class="build" aria-hidden="true">
+          <div class="build__frame">
+            <div class="build__win">
+              <div class="win__bar">
+                <i class="win__dot"></i><i class="win__dot"></i><i class="win__dot"></i>
+                <span class="win__url">vashsite.ru/uslugi/<b>pod-zapros</b></span>
+              </div>
+              <div class="win__body">
+                <div class="blk blk--1">
+                  <span class="blk__tag">первый экран</span>
+                  <span class="bar bar--xl"></span>
+                  <span class="bar bar--m"></span>
+                  <span class="blk__btn"></span>
+                </div>
+                <div class="blk blk--2">
+                  <span class="bar bar--s"></span>
+                  <div class="blk__cols"><i></i><i></i><i></i></div>
+                </div>
+                <div class="blk blk--3">
+                  <span class="bar bar--m"></span>
+                  <span class="bar bar--l"></span>
+                </div>
+                <div class="blk blk--4">
+                  <span class="blk__form"></span>
+                  <span class="blk__btn blk__btn--wide"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stamp">
+              <span class="stamp__n">2</span>
+              <span class="stamp__t">дня</span>
+            </div>
+          </div>
+
+          <div class="feed">
+            <span class="feed__chip">оффер</span>
+            <span class="feed__chip">гео</span>
+            <span class="feed__chip">услуга</span>
+            <span class="feed__chip">кампания</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Бегущая строка: конвейер -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__grp">
+          <span>под услугу</span><i></i><span>под гео</span><i></i><span>под кампанию</span><i></i><span>под
+            запрос</span><i></i><span>под сезон</span><i></i><span>под акцию</span><i></i>
+        </div>
+        <div class="ticker__grp">
+          <span>под услугу</span><i></i><span>под гео</span><i></i><span>под кампанию</span><i></i><span>под
+            запрос</span><i></i><span>под сезон</span><i></i><span>под акцию</span><i></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ЭКРАН 2. ПРОБЛЕМА -->
+    <section class="sec sec--pain" id="pain" data-n="01">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">01 — Проблема</p>
+          <h2 class="sec__title r">Реклама крутится. Посадочная одна и та же с&nbsp;позапрошлого года</h2>
+          <p class="sec__sub r">Знакомо?</p>
+        </div>
+
+        <ul class="pains">
+          <li class="pain r">
+            <span class="pain__x" aria-hidden="true"></span>
+            <p>Хотите протестировать новый оффер — ждёте подрядчика три недели</p>
+          </li>
+          <li class="pain r">
+            <span class="pain__x" aria-hidden="true"></span>
+            <p>Одна страница на десять услуг, потому что делать десять некому и некогда</p>
+          </li>
+          <li class="pain r">
+            <span class="pain__x" aria-hidden="true"></span>
+            <p>Фрилансер собрал на стандартных блоках, и вы неотличимы от соседей по выдаче</p>
+          </li>
+          <li class="pain r">
+            <span class="pain__x" aria-hidden="true"></span>
+            <p>Гипотез много, проверенных — ноль</p>
+          </li>
+        </ul>
+
+        <p class="callout r">Проблема не в рекламе. Бюджет уходит на трафик, который приземляется на страницу, не
+          менявшуюся год.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 3. ЧТО ДЕЛАЕМ -->
+    <section class="sec sec--do" id="do" data-n="02">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">02 — Что делаем</p>
+          <h2 class="sec__title r">Три вещи, которых не даёт фрилансер с&nbsp;биржи</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card r">
+            <div class="card__ico" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <rect x="2" y="7" width="30" height="5" rx="2.5" fill="currentColor" />
+                <rect x="2" y="19" width="40" height="5" rx="2.5" fill="currentColor" opacity=".35" />
+                <rect x="2" y="31" width="22" height="5" rx="2.5" fill="currentColor" opacity=".6" />
+                <path d="M33 5l7 4.5L33 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="card__t">Скорость</h3>
+            <p>Первый экран — за день. Полная посадочная — за два-три. Не потому что торопимся, а потому что
+              производство поставлено на конвейер.</p>
+          </article>
+
+          <article class="card r">
+            <div class="card__ico" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <rect x="2" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2.4" />
+                <rect x="26" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2.4" />
+                <rect x="2" y="26" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2.4" />
+                <rect x="26" y="26" width="16" height="16" rx="4" class="ico__fill" />
+              </svg>
+            </div>
+            <h3 class="card__t">Отличие</h3>
+            <p>Ручная работа там, где она влияет на конверсию, типовые решения — там, где не влияет. Получается качество
+              кастомной вёрстки на скорости шаблона.</p>
+          </article>
+
+          <article class="card r">
+            <div class="card__ico" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none">
+                <rect x="3" y="26" width="7" height="14" rx="2" fill="currentColor" opacity=".35" />
+                <rect x="14" y="18" width="7" height="22" rx="2" fill="currentColor" opacity=".55" />
+                <rect x="25" y="9" width="7" height="31" rx="2" fill="currentColor" opacity=".8" />
+                <circle cx="32" cy="14" r="9" stroke="currentColor" stroke-width="2.4" class="ico__stroke" />
+                <path d="M38.5 20.5L43 25" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                  class="ico__stroke" />
+              </svg>
+            </div>
+            <h3 class="card__t">Аналитику до работы</h3>
+            <p>Сначала смотрим, что крутят ваши конкуренты, по каким запросам и на какие страницы ведут. Потом делаем.
+              Не наоборот.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 4. КАК ЭТО РАБОТАЕТ -->
+    <section class="sec sec--how" id="how" data-n="03">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">03 — Как это работает</p>
+          <h2 class="sec__title r">Четыре шага. Первые два&nbsp;— бесплатно</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step r">
+            <span class="step__n">1</span>
+            <h3 class="step__t">Разбор <span class="badge">бесплатно</span></h3>
+            <p class="step__meta">один день</p>
+            <p>Смотрим вашу нишу: кто рекламируется по вашим запросам, какие у них посадочные, чего нет у вас.</p>
+          </li>
+          <li class="step r">
+            <span class="step__n">2</span>
+            <h3 class="step__t">Демо <span class="badge">бесплатно</span></h3>
+            <p class="step__meta">один экран</p>
+            <p>Собираем один первый экран под ваш самый дорогой запрос. Смотрите на живой странице, не на картинке.</p>
+          </li>
+          <li class="step r">
+            <span class="step__n">3</span>
+            <h3 class="step__t">Полная посадочная</h3>
+            <p class="step__meta">фикс-цена</p>
+            <p>Нравится — доделываем и ставим на вашу площадку. Цена и срок известны заранее, без «плюс доработки».</p>
+          </li>
+          <li class="step r">
+            <span class="step__n">4</span>
+            <h3 class="step__t">Тесты</h3>
+            <p class="step__meta">по подписке</p>
+            <p>Дальше делаем 2–3 страницы в месяц под новые офферы и гипотезы. Вы тестируете, мы производим.</p>
+          </li>
+        </ol>
+
+        <p class="callout callout--soft r">Первые два шага бесплатны, потому что нам самим быстрее показать, чем
+          объяснять.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 5. ПОЧЕМУ ЭТО БЫСТРО -->
+    <section class="sec sec--prod" id="prod" data-n="04">
+      <div class="wrap prod">
+        <div class="prod__copy">
+          <p class="sec__meta">04 — Почему это быстро</p>
+          <h2 class="sec__title r">Не магия, а&nbsp;производство</h2>
+          <p class="r">Мы не собираем каждую страницу с нуля. У нас есть отлаженный конвейер: типовые решения на
+            служебные блоки, ручная работа — только там, где она влияет на конверсию.</p>
+          <p class="r">Поэтому пятая страница для вас делается вдвое быстрее первой. И поэтому мы можем позволить себе
+            бесплатное демо, а студия за 300&nbsp;тысяч — не может.</p>
+        </div>
+
+        <!-- Схема: из чего собрана страница -->
+        <div class="scheme r">
+          <p class="scheme__cap">Одна посадочная в разрезе</p>
+          <div class="scheme__page">
+            <div class="lay lay--hand"><span class="lay__n">01</span>Первый экран<em>ручная работа</em></div>
+            <div class="lay lay--hand"><span class="lay__n">02</span>Оффер и выгоды<em>ручная работа</em></div>
+            <div class="lay lay--std"><span class="lay__n">03</span>Как работаем<em>типовое</em></div>
+            <div class="lay lay--hand"><span class="lay__n">04</span>Форма заявки<em>ручная работа</em></div>
+            <div class="lay lay--std"><span class="lay__n">05</span>Вопросы и ответы<em>типовое</em></div>
+            <div class="lay lay--std"><span class="lay__n">06</span>Контакты, футер<em>типовое</em></div>
+          </div>
+          <ul class="scheme__legend">
+            <li><i class="key key--hand"></i>влияет на конверсию — делаем руками</li>
+            <li><i class="key key--std"></i>не влияет — берём с конвейера</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 6. ФОРМАТЫ И ЦЕНЫ -->
+    <section class="sec sec--price" id="price" data-n="05">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">05 — Форматы и цены</p>
+          <h2 class="sec__title r">Что можно заказать</h2>
+        </div>
+
+        <!-- [___] — плейсхолдеры, подставить свои цифры -->
+        <table class="price r">
+          <thead>
+            <tr>
+              <th scope="col">Формат</th>
+              <th scope="col">Что входит</th>
+              <th scope="col">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Разбор</th>
+              <td data-lbl="Что входит">анализ рекламы конкурентов, их посадочных и запросов</td>
+              <td data-lbl="Цена"><span class="free">бесплатно</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Демо-экран</th>
+              <td data-lbl="Что входит">свёрстанный первый экран на живой странице</td>
+              <td data-lbl="Цена"><span class="free">бесплатно</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Посадочная</th>
+              <td data-lbl="Что входит">полная страница, вёрстка, установка на вашу площадку</td>
+              <td data-lbl="Цена"><span class="sum">от <span class="fill">[___]</span> ₽</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Подписка</th>
+              <td data-lbl="Что входит">2–3 страницы в месяц + правки</td>
+              <td data-lbl="Цена"><span class="sum">от <span class="fill">[___]</span> ₽ / мес</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="price__add r">Дополнительно: баннеры и креативы, презентации, <span class="fill">[___]</span>.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 7. КОМУ ПОДХОДИТ -->
+    <section class="sec sec--fit" id="fit" data-n="06">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">06 — Кому подходит</p>
+          <h2 class="sec__title r">Честно про обе стороны</h2>
+        </div>
+
+        <div class="fit">
+          <div class="fit__col fit__col--yes r">
+            <h3>Мы полезны, если</h3>
+            <ul>
+              <li>У вас крутится реклама и вы знаете, сколько стоит заявка</li>
+              <li>Услуг или направлений больше одного</li>
+              <li>Вы готовы тестировать, а не искать «идеальный вариант навсегда»</li>
+            </ul>
+          </div>
+          <div class="fit__col fit__col--no r">
+            <h3>Мы не подойдём, если</h3>
+            <ul>
+              <li>Нужен один сайт один раз и больше никогда</li>
+              <li>Реклама не крутится и не планируется</li>
+              <li>Нужен брендинг, айдентика и большая творческая концепция</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="fit__note r">Так честнее для обеих сторон.</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 8. ВОПРОСЫ -->
+    <section class="sec sec--faq" id="faq" data-n="07">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">07 — Вопросы</p>
+          <h2 class="sec__title r">Что обычно спрашивают</h2>
+        </div>
+
+        <div class="qas">
+          <details class="qa r">
+            <summary>
+              <span>У нас сайт на <span class="fill">[платформа]</span>, вы будете переносить на что-то своё?</span>
+              <i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Нет. Работаем на том, что у вас уже есть. Тексты и цены правите сами, в привычной админке, без нас и
+                без разработчика. Ничего мигрировать не надо.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary>
+              <span>Чем это лучше фрилансера за 15 тысяч?</span>
+              <i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Одну страницу он соберёт. Пять в месяц, стабильно, в одном стиле и с разбором конкурентов — нет. Если
+                вам нужна одна страница один раз, фрилансер дешевле, и это нормальный выбор.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary>
+              <span>У нас есть свой дизайнер</span>
+              <i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Отлично. Мы не заменяем его, а снимаем поток: типовые посадочные под кампании, чтобы он занимался
+                продуктом, а не десятой страницей под акцию.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary>
+              <span>А если демо не понравится?</span>
+              <i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Ничего не должны. Забираете экран себе или не забираете. Мы потратили день, вы — ноль.</p>
+            </div>
+          </details>
+
+          <details class="qa r">
+            <summary>
+              <span>Сколько правок входит?</span>
+              <i class="qa__ico" aria-hidden="true"></i>
+            </summary>
+            <div class="qa__a">
+              <p>Два круга правок в рамках согласованной структуры. Дальше — по прайсу, чтобы срок оставался сроком.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 9. РАБОТЫ.
+         Плейсхолдер: подставить 5–6 своих работ. Картинки заменить на скриншоты,
+         загруженные в /assets на Тильде. В подписи обязательно оставить срок изготовления. -->
+    <section class="sec sec--works" id="works" data-n="08">
+      <div class="wrap">
+        <div class="sec__head">
+          <p class="sec__meta">08 — Работы</p>
+          <h2 class="sec__title r">Что уже собрано и за сколько</h2>
+        </div>
+
+        <div class="works">
+          <article class="work r">
+            <div class="work__shot">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=60&auto=format&fit=crop"
+                alt="Скриншот посадочной страницы" loading="lazy" decoding="async">
+            </div>
+            <p class="work__cap"><b class="fill">[Название проекта]</b> · <span class="fill">[ниша]</span> · собрано за
+              <span class="fill">[N]</span> дня</p>
+          </article>
+
+          <article class="work r">
+            <div class="work__shot">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=60&auto=format&fit=crop"
+                alt="Скриншот посадочной страницы" loading="lazy" decoding="async">
+            </div>
+            <p class="work__cap"><b class="fill">[Название проекта]</b> · <span class="fill">[ниша]</span> · собрано за
+              <span class="fill">[N]</span> дня</p>
+          </article>
+
+          <article class="work r">
+            <div class="work__shot">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&q=60&auto=format&fit=crop"
+                alt="Скриншот посадочной страницы" loading="lazy" decoding="async">
+            </div>
+            <p class="work__cap"><b class="fill">[Название проекта]</b> · <span class="fill">[ниша]</span> · собрано за
+              <span class="fill">[N]</span> дня</p>
+          </article>
+
+          <article class="work r">
+            <div class="work__shot">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=60&auto=format&fit=crop"
+                alt="Скриншот посадочной страницы" loading="lazy" decoding="async">
+            </div>
+            <p class="work__cap"><b class="fill">[Название проекта]</b> · <span class="fill">[ниша]</span> · собрано за
+              <span class="fill">[N]</span> дня</p>
+          </article>
+
+          <article class="work r">
+            <div class="work__shot">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=60&auto=format&fit=crop"
+                alt="Скриншот посадочной страницы" loading="lazy" decoding="async">
+            </div>
+            <p class="work__cap"><b class="fill">[Название проекта]</b> · <span class="fill">[ниша]</span> · собрано за
+              <span class="fill">[N]</span> дня</p>
+          </article>
+
+          <article class="work r">
+            <div class="work__shot">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=900&q=60&auto=format&fit=crop"
+                alt="Скриншот посадочной страницы" loading="lazy" decoding="async">
+            </div>
+            <p class="work__cap"><b class="fill">[Название проекта]</b> · <span class="fill">[ниша]</span> · собрано за
+              <span class="fill">[N]</span> дня</p>
+          </article>
+        </div>
+
+        <p class="swipe-hint">листайте вбок →</p>
+      </div>
+    </section>
+
+    <!-- ЭКРАН 10. ФИНАЛ -->
+    <section class="final" id="final">
+      <div class="wrap final__in">
+        <div class="final__copy">
+          <p class="sec__meta">09 — Начало работы</p>
+          <h2 class="final__title">Начнём с разбора. Он&nbsp;ничего не&nbsp;стоит</h2>
+          <p class="final__lead">Оставьте сайт — пришлём анализ рекламы ваших конкурентов и один готовый первый экран.
+            Один-два дня, без созвона.</p>
+          <ul class="final__list">
+            <li>Разбор рекламы конкурентов в вашей нише</li>
+            <li>Один свёрстанный первый экран на живой странице</li>
+            <li>Ноль обязательств, если не понравится</li>
+          </ul>
+        </div>
+
+        <!-- ФОРМА 2 из 2 -->
+        <form class="form form--final" data-form novalidate>
+          <div class="field">
+            <label class="field__lbl" for="fin-site">Сайт</label>
+            <input class="field__inp" id="fin-site" name="site" type="text" inputmode="url" autocomplete="url"
+              placeholder="vashsite.ru" required>
+          </div>
+          <div class="field">
+            <label class="field__lbl" for="fin-niche">Ниша</label>
+            <input class="field__inp" id="fin-niche" name="niche" type="text" placeholder="что продаёте" required>
+          </div>
+          <div class="field">
+            <label class="field__lbl" for="fin-contact">Телефон или телеграм</label>
+            <input class="field__inp" id="fin-contact" name="contact" type="text" autocomplete="tel"
+              placeholder="+7 ··· или @nickname" required>
+          </div>
+          <button class="btn btn--lg btn--lit" type="submit">Получить разбор</button>
+          <p class="form__note">Ответим в течение дня. Созвон не нужен.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap ftr__in">
+      <span class="logo logo--ftr">
+        <svg class="logo__mark" width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="24" height="6" rx="2" fill="currentColor" />
+          <rect x="1" y="10" width="15" height="6" rx="2" fill="currentColor" opacity=".45" />
+          <rect x="1" y="19" width="20" height="6" rx="2" class="logo__accent" />
+        </svg>
+        <span class="logo__txt">Сборка</span>
+      </span>
+      <p class="ftr__txt">Посадочные страницы под рекламные кампании</p>
+      <p class="ftr__txt">© <span data-year>2026</span> · <span class="fill">[телеграм / почта]</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
